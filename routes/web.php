@@ -23,6 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->prefix('user')->group(function () {
     Route::get('/', 'UserController@index')->name('user');
-    Route::post('fund', 'UserController@fund')->name('fund');
+    Route::post('fund', 'WalletController@fund')->name('fund');
 });
 

@@ -10,9 +10,6 @@ class UserController extends Controller
     {
         return view('user.dashboard');
     }
-    public function fund(Request $request )
-    {
-       dd($request->all());
-    }
+
     //
 }
