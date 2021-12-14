@@ -6,7 +6,10 @@
         <div class="row">
             <div class="col-12  align-self-center">
                 <div class="sub-header mt-3 py-3 align-self-center d-sm-flex w-100 rounded">
-                <div class="w-sm-100 mr-auto"><h4 class="mb-0">Hello, {{ Auth::user()->name }}</h4> <p>Welcome to crix mobile wallet</p></div>
+                    <div class="w-sm-100 mr-auto">
+                        <h4 class="mb-0">Hello, {{ Auth::user()->name }}</h4>
+                        <p>Welcome to crix mobile wallet</p>
+                    </div>
 
                     <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -19,7 +22,7 @@
 
         <!-- START: Card Data-->
         <div class="row">
-            
+
             <div class="col-md-6 col-lg-4 mt-3">
                 <div class="card overflow-hidden">
                     <div class="card-header d-flex justify-content-between align-items-center">
@@ -39,7 +42,7 @@
                                             <p class="mb-0 font-w-500 tx-s-12">SIP Purchase</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-success">
-                                            +500<br/>
+                                            +500<br />
                                             <small class="d-block">USD</small>
                                         </div>
                                     </div>
@@ -54,7 +57,7 @@
                                             <p class="mb-0 font-w-500 tx-s-12">Mutual Funds</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-danger">
-                                            -500<br/>
+                                            -500<br />
                                             <small class="d-block">USD</small>
                                         </div>
                                     </div>
@@ -69,7 +72,7 @@
                                             <p class="mb-0 font-w-500 tx-s-12">Equity</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-danger">
-                                            +500<br/>
+                                            +500<br />
                                             <small class="d-block">USD</small>
                                         </div>
                                     </div>
@@ -84,7 +87,7 @@
                                             <p class="mb-0 font-w-500 tx-s-12">Commodity</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-danger">
-                                            +500<br/>
+                                            +500<br />
                                             <small class="d-block">USD</small>
                                         </div>
                                     </div>
@@ -95,11 +98,11 @@
                                             <small class="d-block">JUL</small><span class="h6">16</span>
                                         </div>
                                         <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Abexon Dixon</span><br/>
+                                            <span class="mb-0 font-w-600">Abexon Dixon</span><br />
                                             <p class="mb-0 font-w-500 tx-s-12">Real Estate</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-success">
-                                            +500<br/>
+                                            +500<br />
                                             <small class="d-block">USD</small>
                                         </div>
                                     </div>
@@ -110,11 +113,11 @@
                                             <small class="d-block">AUG</small><span class="h6">28</span>
                                         </div>
                                         <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Nathan S. Johnson</span><br/>
+                                            <span class="mb-0 font-w-600">Nathan S. Johnson</span><br />
                                             <p class="mb-0 font-w-500 tx-s-12">Switch Out</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-success">
-                                            +500<br/>
+                                            +500<br />
                                             <small class="d-block">USD</small>
                                         </div>
                                     </div>
@@ -142,15 +145,18 @@
                                     <div class="d-flex px-0 px-lg-2 py-2 align-self-center">
                                         <i class="fas fa-dollar-sign card-liner-icon mt-2 text-white"></i>
                                         <div class="card-liner-content">
-                                        <h2 class="card-liner-title text-white">CRX {{ Auth::user()->wallet->balance }}</h2>
+                                            <h2 class="card-liner-title text-white">CRX
+                                                {{ Auth::user()->wallet->balance }}</h2>
                                             <h6 class="card-liner-subtitle text-white">Crix Balance</h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="my-auto">
-                                <a href="#" class="btn btn-outline-primary font-w-600 my-auto text-nowrap">Get More</a>
+                                <a href="#" data-toggle="modal" data-target="#fund-modal"
+                                    class="btn btn-outline-primary font-w-600 my-auto text-nowrap">Get More</a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -215,7 +221,7 @@
                                     <div class="media d-flex w-100">
                                         <i class="fab fa-cc-stripe h1 color-primary"></i>
                                         <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Stripe Payment</span><br/>
+                                            <span class="mb-0 font-w-600">Stripe Payment</span><br />
                                             <p class="mb-0 font-w-500 tx-s-12">1234 1234 1234 1234</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-success">
@@ -227,7 +233,7 @@
                                     <div class="media d-flex w-100">
                                         <i class="fab fa-cc-discover h1 color-primary"></i>
                                         <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Discover Card</span><br/>
+                                            <span class="mb-0 font-w-600">Discover Card</span><br />
                                             <p class="mb-0 font-w-500 tx-s-12">1234 1234 1234 1234</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-danger">
@@ -241,161 +247,42 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 mt-3">
-                <div class="card overflow-hidden">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h6 class="card-title">Recent Invoices</h6>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-body p-0">
-                            <ul class="list-group list-unstyled">
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="media d-flex w-100">
-                                        <span class="badge outline-badge-info my-auto">Paid</span>
-                                        <div class="media-body align-self-center  text-right">
-                                            <span class="mb-0 font-w-600">Payment</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">SIP Purchase</p>
-                                        </div>
-                                        <div class="ml-auto my-auto pl-4 font-weight-bold  text-right text-success">
-                                            +500<br>
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="transaction-date d-flex w-100">
-                                        <span class="badge outline-badge-danger my-auto">Canceled</span>
-                                        <div class="media-body align-self-center  text-right">
-                                            <span class="mb-0 font-w-600">Service Payment</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Mutual Funds</p>
-                                        </div>
-                                        <div class="ml-auto my-auto pl-4 font-weight-bold text-right text-danger">
-                                            -500<br>
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="media d-flex w-100">
-                                        <span class="badge outline-badge-warning my-auto">Standby</span>
-                                        <div class="media-body align-self-center  text-right">
-                                            <span class="mb-0 font-w-600">Membership</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Equity</p>
-                                        </div>
-                                        <div class="ml-auto my-auto pl-4 font-weight-bold text-right text-danger">
-                                            +500<br>
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="media d-flex w-100">
-                                        <span class="badge outline-badge-success my-auto">Paid</span>
-                                        <div class="media-body align-self-center  text-right">
-                                            <span class="mb-0 font-w-600">Renewal</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Commodity</p>
-                                        </div>
-                                        <div class="ml-auto my-auto pl-4 font-weight-bold text-right text-danger">
-                                            +500<br>
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="media d-flex w-100">
-                                        <span class="badge outline-badge-danger my-auto">Hold</span>
-                                        <div class="media-body align-self-center  text-right">
-                                            <span class="mb-0 font-w-600">New Purchase</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Real Estate</p>
-                                        </div>
-                                        <div class="ml-auto my-auto pl-4 font-weight-bold text-right text-success">
-                                            +500<br>
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 zoom">
-                                    <div class="media d-flex w-100">
-                                        <span class="badge outline-badge-info my-auto">Process</span>
-                                        <div class="media-body align-self-center  text-right">
-                                            <span class="mb-0 font-w-600">Widrawal</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Switch Out</p>
-                                        </div>
-                                        <div class="ml-auto my-auto pl-4 font-weight-bold text-right text-success">
-                                            +500<br>
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-8 mt-3">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h6 class="card-title">Transaction History</h6>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-body p-0 table-responsive">
-                            <table class="table">
-
-                                <tbody id="transactionHistoryTrns">
-                                    <tr>
-                                        <td><strong>Date</strong></td>
-                                        <td><strong>Transaction Number</strong></td>
-                                        <td><strong>Details</strong></td>
-                                        <td><strong>Amount</strong></td>
-                                    </tr>
-                                    <tr class="gray zoom">
-                                        <td>09/04/2020</td>
-                                        <td>19999999980409299887130</td>
-                                        <td>EMI FOR BT EMI  INT 18  FOR 6  005 006 </td>
-                                        <td>4,600.14 (Dr)</td>
-                                    </tr>
-                                    <tr class="zoom">
-                                        <td>09/04/2020</td>
-                                        <td>19999999980409299887140</td>
-                                        <td>GST</td>
-                                        <td>25.03 (Dr)</td>
-                                    </tr>
-                                    <tr class="zoom">
-                                        <td>09/04/2020</td>
-                                        <td>19999999980409299887140</td>
-                                        <td>EMI INT BT EMI  INT 18  FOR 6  005 006 </td>
-                                        <td>139.03 (Dr)</td>
-                                    </tr>
-                                    <tr class="zoom">
-                                        <td>08/04/2020</td>
-                                        <td>09999999980408001102363</td>
-                                        <td>PAYMENT RECEIVED NEFT</td>
-                                        <td>35,225.00 (Cr)</td>
-                                    </tr>
-                                    <tr class="zoom">
-                                        <td>04/04/2020</td>
-                                        <td>VT200960059001300000269</td>
-                                        <td>PAYTM                  NOIDA         IN</td>
-                                        <td>379.00 (Dr)</td>
-                                    </tr>
-                                    <tr class="zoom">
-                                        <td>31/03/2020</td>
-                                        <td>VT200920064000540000206</td>
-                                        <td>RAZ PHONEPE RECHARGE   Bangalore     IN</td>
-                                        <td>98.00 (Dr)</td>
-                                    </tr>
-
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
         <!-- END: Card DATA-->
     </div>
 </main>
+<!-- Modal -->
+<div class="modal fade" id="fund-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLongTitle1">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <form action="{{ route ('fund') }}" method="POST"> @csrf
+                    @foreach ($errors->all() as $err)
+                    <p class="text-danger-text-center">{{$err}}</p>
+                    @endforeach
+                    <div class="form-group">
+                        <label for="">Amount</label>
+                        <input type="number" class="form-control" placeholder="Amount" name="amount">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" placeholder="password" name="password">
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Continue</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+</div>
+
 @endsection

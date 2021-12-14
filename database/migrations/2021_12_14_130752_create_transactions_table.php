@@ -19,7 +19,7 @@ class CreateTransactionsTable extends Migration
             $table->integer('amount');
             $table->integer('transaction_type_id');
             $table->enum('status', ['pending', 'success', 'failed'])->default('pending');
-            $table->id();
+            $table->boolean('is_credit');
             $table->timestamps();
         });
     }
