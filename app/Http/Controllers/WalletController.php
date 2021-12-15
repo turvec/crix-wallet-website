@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class WalletController extends Controller
 {
@@ -16,7 +18,13 @@ class WalletController extends Controller
         if (!Hash::check($request->password, Auth::user()->password)) {
             return back()->with(['error'=> 'Incorrect account password']);
         }
+        Auth::user()->transaction()->create([
+            'amount' => $request->amount,
+            'transaction_type_id' => 1,
+            'is_credit' => true,
 
+            ]);
+            return back()->with(['success' => 'Transaction initiated successfully']);
         dd($request->all());
     }
 }

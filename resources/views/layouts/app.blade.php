@@ -280,6 +280,19 @@
         <!-- START: Page JS-->
         <script src="/dist/js/home.script.js"></script>
         <!-- END: Page JS-->
+
+        @if (session('error'))
+        <script>
+         alert("{{ session('error') }}")
+        </script>
+        @endif
+        
+        @if (session('success'))
+        <script>
+         alert("{{ session('success') }}")
+        </script>
+        @endif
+
     </body>
     <!-- END: Body-->
 
