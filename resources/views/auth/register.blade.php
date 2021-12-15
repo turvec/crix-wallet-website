@@ -4,7 +4,7 @@
 <div class="container">
             <div class="row vh-100 justify-content-between align-items-center">
                 <div class="col-12">
-                    <form action="" method="POST" class="row row-eq-height lockscreen  mt-5 mb-5">@csrf
+                    <form action="{{ route ('register') }}" method="POST" class="row row-eq-height lockscreen  mt-5 mb-5">@csrf
 
                         <div class="lock-image col-12 col-sm-5"></div>
                         <div class="login-form col-12 col-sm-7">
