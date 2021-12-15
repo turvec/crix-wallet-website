@@ -23,6 +23,7 @@ class WalletController extends Controller
             'amount' => $request->amount,
             'transaction_type_id' => 1,
             'is_credit' => true,
+            'reference' => $request->reference
 
             ]);
             try{
