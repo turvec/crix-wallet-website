@@ -38,7 +38,7 @@ class WalletController extends Controller
     }
     public function fundCallback()
     {
-        $paymentDetails = Paystack::getPaymentData();
+        $paymentDetails = \Paystack::getPaymentData();
 
         dd($paymentDetails);
     }
