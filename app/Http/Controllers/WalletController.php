@@ -10,6 +10,7 @@ class WalletController extends Controller
 {
     public function fund(Request $request )
     {
+       
         $data = $request->validate([
             'amount' => 'required|integer|min:100',
             'password' => 'required'
@@ -18,13 +19,27 @@ class WalletController extends Controller
         if (!Hash::check($request->password, Auth::user()->password)) {
             return back()->with(['error'=> 'Incorrect account password']);
         }
-        Auth::user()->transaction()->create([
+        $transaction = Auth::user()->transaction()->create([
             'amount' => $request->amount,
             'transaction_type_id' => 1,
             'is_credit' => true,
 
             ]);
+            try{
+                return \Paystack::getAuthorizationUrl()->redirectNow();
+            }catch(\Exception $e) {
+                $transaction->status = 'failed';
+                $transaction->save();
+
+                return back()->with(['error' => 'Error while processing payment']);
+            }        
+    
             return back()->with(['success' => 'Transaction initiated successfully']);
-        dd($request->all());
+    }
+    public function fundCallback(Type $var = null)
+    {
+        $paymentDetails = Paystack::getPaymentData();
+
+        dd($paymentDetails);
     }
 }
