@@ -283,7 +283,8 @@
                     <input type="hidden" name="currency" value="NGN">
                     <input type="hidden" name="metadata" value="{{ json_encode($array = ['key_name' => 'value',]) }}" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
                     <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
-                            
+                <input type="hidden" name="callback_url" value="{{ route('wallet.callback') }}">   
+                    
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button class="btn btn-primary">Continue</button>
             </form>

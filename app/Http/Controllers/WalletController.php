@@ -36,7 +36,7 @@ class WalletController extends Controller
     
             return back()->with(['success' => 'Transaction initiated successfully']);
     }
-    public function fundCallback(Type $var = null)
+    public function fundCallback()
     {
         $paymentDetails = Paystack::getPaymentData();
 
