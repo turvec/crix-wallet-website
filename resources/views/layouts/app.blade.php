@@ -212,6 +212,7 @@
                 <li class="dropdown active"><a href=""><i class="icon-home mr-1"></i> Dashboard</a>
                         <ul>
                             <li><a href="{{ route ('user')}}"><i class="icon-rocket"></i>Home</a></li>
+                            <li><a href="{{ route ('logout')}}"><i class="icon-power"></i>login</a></li>
                         </ul>
                     </li>
                    
