@@ -18,5 +18,14 @@ class Transaction extends Model
     {
         return $this->belongsTo(User::class);
     }
+    /**
+     * Get the transaction_type that owns the Transaction
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function type(): BelongsTo
+    {
+        return $this->belongsTo(TransactionType::class, 'transaction_type_id', 'id');
+    }
     //
 }

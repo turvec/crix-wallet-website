@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $transactions = Auth::user()->transactions;
+        $transactions = Auth::user()->transactions()->take(6)->get();
         
         return view('user.dashboard', compact('transactions'));
     }

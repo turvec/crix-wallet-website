@@ -21,7 +21,7 @@ class WalletController extends Controller
         if (!Hash::check($request->password, Auth::user()->password)) {
             return back()->with(['error'=> 'Incorrect account password']);
         }
-        $transaction = Auth::user()->transaction()->create([
+        $transaction = Auth::user()->transactions()->create([
             'amount' => $request->amount,
             'transaction_type_id' => 1,
             'is_credit' => true,

@@ -31,22 +31,25 @@
                     <div class="card-content">
                         <div class="card-body p-0">
                             <ul class="list-group list-unstyled">
-                                <li class="p-2 border-bottom zoom">
+                                @foreach ($transactions as $transaction)
+                                     <li class="p-2 border-bottom zoom">
                                     <div class="media d-flex w-100">
                                         <div class="transaction-date text-center rounded bg-primary text-white p-2">
-                                            <small class="d-block">MAR</small><span class="h6">28</span>
+                                        <small class="d-block">{{ $transaction->created_at->format('M') }}</small><span class="h6">{{ $transaction->created_at->format('d') }}</span>
                                         </div>
 
                                         <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Jonathan</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">SIP Purchase</p>
+                                            <span class="mb-0 font-w-600">{{ $transaction->type->name }}</span><br>
+                                            <p class="mb-0 font-w-500 tx-s-12">{{  $transaction->status }}</p>
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-success">
-                                            +500<br />
+                                        {{ $transaction->amount }}<br />
                                             <small class="d-block">CRX</small>
                                         </div>
                                     </div>
                                 </li>
+                                @endforeach
+                               
                             </ul>
                         </div>
                     </div>
