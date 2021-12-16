@@ -8,7 +8,9 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('user.dashboard');
+        $transactions = Auth::user()->transactions;
+        
+        return view('user.dashboard', compact('transactions'));
     }
 
     //

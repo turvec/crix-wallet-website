@@ -43,86 +43,10 @@
                                         </div>
                                         <div class="ml-auto my-auto font-weight-bold text-right text-success">
                                             +500<br />
-                                            <small class="d-block">USD</small>
+                                            <small class="d-block">CRX</small>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="transaction-date d-flex w-100">
-                                        <div class="date text-center rounded bg-primary text-white p-2">
-                                            <small class="d-block">APR</small><span class="h6">12</span>
-                                        </div>
-                                        <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">kelvin</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Mutual Funds</p>
-                                        </div>
-                                        <div class="ml-auto my-auto font-weight-bold text-right text-danger">
-                                            -500<br />
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="media d-flex w-100">
-                                        <div class="transaction-date text-center rounded bg-primary text-white p-2">
-                                            <small class="d-block">MAY</small><span class="h6">13</span>
-                                        </div>
-                                        <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Peter</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Equity</p>
-                                        </div>
-                                        <div class="ml-auto my-auto font-weight-bold text-right text-danger">
-                                            +500<br />
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="media d-flex w-100">
-                                        <div class="transaction-date text-center rounded bg-primary text-white p-2">
-                                            <small class="d-block">JUN</small><span class="h6">23</span>
-                                        </div>
-                                        <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Ray Sin</span><br>
-                                            <p class="mb-0 font-w-500 tx-s-12">Commodity</p>
-                                        </div>
-                                        <div class="ml-auto my-auto font-weight-bold text-right text-danger">
-                                            +500<br />
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 border-bottom zoom">
-                                    <div class="media d-flex w-100">
-                                        <div class="transaction-date text-center rounded bg-primary text-white p-2">
-                                            <small class="d-block">JUL</small><span class="h6">16</span>
-                                        </div>
-                                        <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Abexon Dixon</span><br />
-                                            <p class="mb-0 font-w-500 tx-s-12">Real Estate</p>
-                                        </div>
-                                        <div class="ml-auto my-auto font-weight-bold text-right text-success">
-                                            +500<br />
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="p-2 zoom">
-                                    <div class="media d-flex w-100">
-                                        <div class="transaction-date text-center rounded bg-primary text-white p-2">
-                                            <small class="d-block">AUG</small><span class="h6">28</span>
-                                        </div>
-                                        <div class="media-body align-self-center pl-4">
-                                            <span class="mb-0 font-w-600">Nathan S. Johnson</span><br />
-                                            <p class="mb-0 font-w-500 tx-s-12">Switch Out</p>
-                                        </div>
-                                        <div class="ml-auto my-auto font-weight-bold text-right text-success">
-                                            +500<br />
-                                            <small class="d-block">USD</small>
-                                        </div>
-                                    </div>
-                                </li>
-
                             </ul>
                         </div>
                     </div>
