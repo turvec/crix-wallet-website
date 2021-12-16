@@ -212,7 +212,7 @@
                 <li class="dropdown active"><a href=""><i class="icon-home mr-1"></i> Dashboard</a>
                         <ul>
                             <li><a href="{{ route ('user')}}"><i class="icon-rocket"></i>Home</a></li>
-                            <li><a href="#" id="logout"><i class="icon-power"></i>logout</a></li>
+                            <li><a href="{{ route ('logout')}}" id="logout"><i class="icon-power"></i>logout</a></li>
                         <form action="{{ route('logout')}}" method="POST" id="form-submit">@csrf
                         </form>
                         </ul>
