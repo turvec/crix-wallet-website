@@ -78,7 +78,7 @@
                             </div>
                             <div class="my-auto">
                                 <a href="#" data-toggle="modal" data-target="#fund-modal"
-                                    class="btn btn-outline-primary font-w-600 my-auto text-nowrap">Get More</a>
+                                    class="btn btn-outline-primary font-w-600 my-auto text-nowrap">Fund Wallet</a>
                             </div>
 
                         </div>
