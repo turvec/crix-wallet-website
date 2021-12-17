@@ -19,6 +19,12 @@ class UserController extends Controller
         
         return view('user.dashboard', compact('transactions'));
     }
+    public function allTransaction()
+    {
+        $transactions = Auth::user()->transactions;
+        
+        return view('user.transaction', compact('transactions'));
+    }
 
-    //
+    
 }

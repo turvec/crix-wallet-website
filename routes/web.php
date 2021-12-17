@@ -25,6 +25,7 @@ Route::get('/payment/callback', 'WalletController@fundCallback')->name('wallet.c
 
 Route::middleware(['auth'])->prefix('user')->group(function () {
     Route::get('/', 'UserController@index')->name('user');
+    Route::get('all-transactions', 'UserController@allTransaction')->name('all.transaction');
     Route::post('fund', 'WalletController@fund')->name('fund');
 });
 

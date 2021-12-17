@@ -212,7 +212,8 @@
                 <li class="dropdown active"><a href=""><i class="icon-home mr-1"></i> Dashboard</a>
                         <ul>
                             <li><a href="{{ route ('user')}}"><i class="icon-rocket"></i>Home</a></li>
-                            <li><a href="{{ route ('logout')}}" id="logout"><i class="icon-power"></i>logout</a></li>
+                            <li><a href="{{ route ('all.transaction')}}"><i class="icon-list"></i>Transactions</a></li>
+                        <li><a href="#" id="logout" onclick="form_submit()"><i class="icon-power"></i>logout</a></li>
                         <form action="{{ route('logout')}}" method="POST" id="form-submit">@csrf
                         </form>
                         </ul>
@@ -296,14 +297,11 @@
         </script>
         @endif
         <script>
-        $(function () {
-            
-            $('#logout').on('click',function () {
-                event.preventDefault();
+        function form_submit() {
+            event.preventDefault();
                 $('#form-submit').submit();
-            });
-
-        })
+        }
+        
         </script>
 
     </body>

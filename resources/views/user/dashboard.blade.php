@@ -35,7 +35,7 @@
                                      <li class="p-2 border-bottom zoom">
                                     <div class="media d-flex w-100">
                                         <div class="transaction-date text-center rounded bg-primary text-white p-2">
-                                        <small class="d-block">{{ $transaction->created_at->format('M') }}</small><span class="h6">{{ $transaction->created_at->format('d') }}</span>
+                                        <small class="d-block">{{ $transaction->created_at->format('Y y M m D d i') }}</small><span class="h6">{{ $transaction->created_at->format('d') }}</span>
                                         </div>
 
                                         <div class="media-body align-self-center pl-4">
